@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="Content-Style-Type" content="text/css">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Content-Script-Type" content="text/javascript">
+
+		<meta name="viewport" content="width=device-width">
+
+		<meta name="description" content="7/14開催! オンライン就活フェアのページです。">
+		<meta name="keywords" content="BESTAR,美容学生,サロン">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<title>7/14 オンライン就活フェア</title>
+		<style type="text/css"></style>
+
+		<!-- <script type="text/javascript">
+		function check_number(){
+			if(form2.free_word2.value.match(/^[0-9]+$/)){
+			alert(form2.free_word2.value);}
+			else{alert("error!");}
+		}
+        </script> -->
+        
+         <!-- jQuery.jsの読み込み -->
+         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+         <!-- スムーズスクロール部分の記述 -->
+         <script>
+         $(function(){
+         // #で始まるアンカーをクリックした場合に処理
+         $('a[href^=#]').click(function() {
+             // スクロールの速度
+             var speed = 400; // ミリ秒
+             // アンカーの値取得
+             var href= $(this).attr("href");
+             // 移動先を取得
+             var target = $(href == "#" || href == "" ? 'html' : href);
+             // 移動先を数値で取得
+             var position = target.offset().top;
+             // スムーススクロール
+             $('body,html').animate({scrollTop:position}, speed, 'swing');
+             return false;
+         });
+         });
+         </script>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	</head>
+	<body>
+		<table width="100%" cellspacing="0" cellpadding="0" style="border:0px solid blue;" bgcolor="white" align="center">
+			<header>
+				<img class="logo" src="./images/logo.jpg" alt="logo">
+            </header>
+
+			<div class="mainview">
+                <div class="title">
+                    <img class="title" src="./images/title.jpg" alt="title">
+                </div>
+
+                <div class="contents_part">
+                    <a href="#button1">
+                        <img class="button" src="./images/0715OG.jpg" alt="7/15のボタン">
+                    </a>
+                    <a href="#button2">
+                        <img class="button" src="./images/0716GY.jpg" alt="7/15のボタン">
+                    </a>
+
+                    <div id="button1">
+                        <img class="room" src="./images/Aroom.jpg" alt="7/15のAルーム">
+                        <a href="">
+                            <img class="salon" src="./images/picasso.jpg" alt="">
+                        </a>
+                        <a href="">
+                            <img class="salon" src="./images/eighthair.jpg" alt="">
+                        </a>
+                        <a href="">
+                            <img class="salon" src="./images/LITTE-GARDEN.jpg" alt="">
+                        </a>
+                        <a href="">
+                            <img class="salon" src="./images/RIENS.jpg" alt="">
+                        </a>
+                        <a href="">
+                            <img class="salon" src="./images/VOUGE.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="0715Broom">
+                        <img class="Broom" src="./images/Broom.jpg" alt="7/15のBルーム">
+                        <a href="">
+                            <img class="salon" src="./images/Setup.jpg" alt="">
+                        </a>
+                        <a href="">
+                            <img class="salon" src="./images/CRECE.jpg" alt="">
+                        </a>
+                        <a href="">
+                            <img class="salon" src="./images/Vianca.jpg" alt="">
+                        </a>
+                        <a href="">
+                            <img class="salon" src="./images/hair-Technica.jpg" alt="">
+                        </a>
+                        <a href="">
+                            <img class="salon" src="./images/atelier-enrubanne.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <div id="button2">
+                        <img class="room" src="./images/0716Aroom.jpg" alt="7/16のAルーム">
+                        <a href="">
+                            <img class="salon" src="./images/JOYCE.jpg" alt="">
+                        </a>
+                        <a href="">
+                            <img class="salon" src="./images/KNOPP.jpg" alt="">
+                        </a>
+                        <a href="">
+                            <img class="salon" src="./images/Theia-hair-design.jpg" alt="">
+                        </a>
+                        <a href="">
+                            <img class="salon" src="./images/ING.jpg" alt="">
+                        </a>
+                        <a href="">
+                            <img class="salon" src="./images/ladieshair.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="0716Broom">
+                        <img class="Broom" src="./images/Broom.jpg" alt="7/16のBルーム">
+                        <a href="">
+                            <img class="salon" src="./images/PANIC.jpg" alt="">
+                        </a>
+                        <a href="">
+                            <img class="salon" src="./images/togashi.jpg" alt="">
+                        </a>
+                        <a href="">
+                            <img class="salon" src="./images/ARLE.jpg" alt="">
+                        </a>
+                        <a href="">
+                            <img class="salon" src="./images/SUGI.jpg" alt="">
+                        </a>
+                        <a href="">
+                            <img class="salon" src="./images/hello.jpg" alt="">
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="footer">
+                <img src="./images/LINKS.jpg" alt="フッターの画像です">
+                <div class="insta">
+                    <img src="./images/Instagram.jpg" alt="インスタの画像です">
+                </div>
+            </div>
+
+		</table>
+	</body>
+</html>
